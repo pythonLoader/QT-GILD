@@ -23,8 +23,13 @@ QT-GILD is an  automated  and specially tailored unsupervised deep learning tech
 ```bash
 python QT-GILD.py -i <input-gene-tree-file> -o <output-folder>
 ``` 
-#### OR
+OR
 <!-- Code Blocks -->
 ```bash
 python QT-GILD.py --input <input-gene-tree-file> --output <output-folder>
+``` 
+#### To generate the species trees using WQFM, just use a --st flag alongside usual input.
+
+```bash
+python QT-GILD.py -i <input-gene-tree-file> -o <output-folder> --st
 ``` 
