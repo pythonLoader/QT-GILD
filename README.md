@@ -49,3 +49,11 @@ python QT-GILD.py --input <input-gene-tree-file> --output <output-folder>
 ```bash
 python QT-GILD.py -i <input-gene-tree-file> -o <output-folder> --st
 ``` 
+
+## Example
+
+There are two gene tree files provided in the repository to test QT-GILD
+
+```bash
+python QT-GILD.py --input test/aminota_gt.tre --output output
+``` 

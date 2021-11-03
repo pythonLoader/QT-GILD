@@ -13,6 +13,7 @@ import argparse
 from lib.imputer import modified_numpy_formation
 from lib.imputer import impute
 from lib.Quartet_Numpy_Generation import generate_numpy
+from lib.distribution_maker import qdist
 # data_directory="11-taxon/100_genes/"
 
 # base_directory=os.getcwd()
@@ -106,16 +107,54 @@ def parseArguments():
 
     return args
 
+def copy_four_taxa_identifiers(temp_dir):
+	
+	base_directory = temp_dir +"/GT_Numpy"
+	Four_Taxa_Dir = "Four_Taxa_Map"
+	_dir_  = base_directory + "/" + Four_Taxa_Dir
+	if not os.path.exists(_dir_ ):
+		os.mkdir(_dir_)
+	Whole_Taxa_Map = base_directory + "/Whole_GT_Numpy/Taxa_Map_Quartets"
+	files = os.listdir(Whole_Taxa_Map)
+	for file in files:
+		if file.startswith("Four"):
+			out_dir=base_directory + "/"+Four_Taxa_Dir
+			print(file)
+			shutil.copy2(os.path.join(Whole_Taxa_Map,file),os.path.join(out_dir,file))
+
+def copy_results_to_output(output_direc,base_direc):
+	if not os.path.exists(output_direc):
+		os.mkdir(output_direc)
+	wqmc_style = base_direc +"/GT_Numpy/Imputed_GT_Numpy/Imputed_Quartets_wqmc_format"
+	newick_style = base_direc +"/GT_Numpy/Imputed_GT_Numpy/Quartets_Newick_format"
+
+	out_wqmc = output_direc + "/Imputed_Quartets_wqmc_format"
+	out_newick = output_direc + "/Imputed_Quartets_Newick_format"
+
+	shutil.copytree(wqmc_style,out_wqmc)
+	shutil.copytree(newick_style,out_newick)
+
+
+
+
 def main():
 	arguments = parseArguments()
 	
 	gt_path = arguments.gt_path
 	temp_dir = arguments.temp_dir
+	output_path = arguments.output
+
+	print("========= QT-GILD commencing =========")
 
 	working_folder_creation(gt_path,temp_dir,arguments.mode)
 	numpy_generator_whole_GT()
 	modified_numpy_formation(base_directory)
 	impute(base_directory,Taxa_num)
+	copy_four_taxa_identifiers(temp_dir)
+	qdist(temp_dir)
+	copy_results_to_output(output_path,temp_dir)
+
+	print("========= QT-GILD executed =========")
 
 if __name__ == "__main__":
 	
