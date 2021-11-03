@@ -15,6 +15,22 @@ QT-GILD is an  automated  and specially tailored unsupervised deep learning tech
 
 <!--wQFM uses a two-step technique in which we first use the input set of estimated gene trees to produce a set of weighted four-taxon trees (*weighted quartets*).-->
 
+## Installing QT-GILD
+
+Before installing QT-GILD, you must make sure you have the following program:
+
+- Python: Version >= 3.7
+- Pip: Version >= 21.0
+
+To install the python packages, use the following command
+
+```bash
+pip install -r requirements.txt
+``` 
+
+The authors recommend using seperate conda environment to install QT-GILD.
+
+
 ## Usage
 
 ####  For imputing and generating the imputed weighted quartets distribution, use -i and -o flag.
