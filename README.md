@@ -11,6 +11,20 @@ This repository contains the official implementation of ***QT-GILD*** <!--code a
 
 **QT-GILD** is a quartet imputation technique for estimating species trees despite the presence of missing data. 
 
-QT-GILD an  automated  andspecially tailored unsupervised deep learning technique, accompanied by cues from natural languageprocessing (NLP), which learns the quartet distribution in a given set of incomplete gene trees andgenerates a complete set of quartets accordingly.
+QT-GILD is an  automated  and specially tailored unsupervised deep learning technique, accompanied by cues from natural languageprocessing (NLP), which learns the quartet distribution in a given set of incomplete gene trees andgenerates a complete set of quartets accordingly.
 
 <!--wQFM uses a two-step technique in which we first use the input set of estimated gene trees to produce a set of weighted four-taxon trees (*weighted quartets*).-->
+
+## Usage
+
+####  For imputing and generating the imputed weighted quartets distribution, use -i and -o flag.
+   
+<!-- Code Blocks -->
+```bash
+python QT-GILD.py -i <input-gene-tree-file> -o <output-folder>
+``` 
+#### OR
+<!-- Code Blocks -->
+```bash
+python QT-GILD.py --input <input-gene-tree-file> --output <output-folder>
+``` 
