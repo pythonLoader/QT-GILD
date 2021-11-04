@@ -21,9 +21,9 @@ QT-GILD is an  automated  and specially tailored unsupervised deep learning tech
 
 Before installing QT-GILD, please sure that you have the following programs installed:
 
-- Python: Version >= 3.7
-- Pip: Version >= 21.0
-- Java: Version >= 11.0 (if you want to generate the species trees using [wQFM](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab428/6292084))
+- [Python](https://www.python.org/downloads/): Version >= 3.7
+- [Pip](https://pip.pypa.io/en/stable/installation/): Version >= 21.0
+- [Java](https://www.oracle.com/java/technologies/downloads/): Version >= 11.0 (if you want to generate the species trees using [wQFM](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab428/6292084))
 
 To install the python packages, use the following command
 
@@ -31,9 +31,9 @@ To install the python packages, use the following command
 pip install -r requirements.txt
 ``` 
 
-The authors recommend using seperate conda environment to install QT-GILD.
+The authors recommend installing [Anacoda](https://www.anaconda.com/) and using seperate [conda environment](https://conda.io/projects/conda/en/latest/user-guide/concepts/environments.html) to install QT-GILD.
 
-If you use wQFM, please cite the paper ["wQFM: Highly Accurate Genome-scale Species Tree Estimation from Weighted Quartets"](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab428/6292084)
+If you use wQFM, please cite the paper ["wQFM: Highly Accurate Genome-scale Species Tree Estimation from Weighted Quartets"](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab428/6292084).
 
 
 ## Usage
