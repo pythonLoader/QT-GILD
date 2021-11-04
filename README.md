@@ -14,8 +14,8 @@ This repository contains the official implementation of ***QT-GILD*** <!--code a
 QT-GILD is an  automated  and specially tailored unsupervised deep learning technique, accompanied by cues from natural languageprocessing (NLP), which learns the quartet distribution in a given set of incomplete gene trees andgenerates a complete set of quartets accordingly.
 
 <!--wQFM uses a two-step technique in which we first use the input set of estimated gene trees to produce a set of weighted four-taxon trees (*weighted quartets*).-->
-+ Input: A set of incomplete gene trees *Q*
-+ Output: The imputed quartet distribution of the gene trees *Q*
++ Input: A set of incomplete gene trees
++ Output: The imputed quartet distribution of the gene trees
 
 ## Installing QT-GILD
 
