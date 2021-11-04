@@ -44,7 +44,7 @@ OR
 ```bash
 python QT-GILD.py --input <input-gene-tree-file> --output <output-folder>
 ``` 
-#### To generate the species trees using WQFM, just use a --st flag alongside usual input.
+#### To generate the species trees using [wQFM](https://github.com/Mahim1997/wQFM-2020), just use a --st flag alongside usual input. (If you use wQFM, please cite the paper ["wQFM: Highly Accurate Genome-scale Species Tree Estimation from Weighted Quartets"](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab428/6292084))
 
 ```bash
 python QT-GILD.py -i <input-gene-tree-file> -o <output-folder> --st
