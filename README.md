@@ -1,6 +1,7 @@
 # QT-GILD
 #### QT-GILD (version 1.0)
-This repository contains the official implementation of ***QT-GILD***. <!--code and helper scripts of--> <!-- our paper [**"wQFM: Highly Accurate Genome-scale Species Tree Estimation from Weighted Quartets"**](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab428/6292084) accepted in ***Bioinformatics, 2021***. -->
+This repository contains the official implementation of [***QT-GILD: Quartet Based Gene Tree Imputation Using Deep Learning Improves Phylogenomic Analyses Despite Missing Data***](https://www.biorxiv.org/content/10.1101/2021.11.03.467204v2). <!--code and helper scripts of--> <!-- our paper [**"wQFM: Highly Accurate Genome-scale Species Tree Estimation from Weighted Quartets"**](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab428/6292084) accepted in ***Bioinformatics, 2021***. -->
+If you use any part of this software, please cite [our paper](https://www.biorxiv.org/content/10.1101/2021.11.03.467204v2).
 
 <!-- ## Notice to all the users
 - Codebase has been slightly updated **(on June 12, 2021)** to fix some precision related bugs.
